@@ -1,0 +1,36 @@
+body{
+    text-align: center;
+}
+
+.newBookmark{
+    border: 1px solid black;
+}
+
+.bookmarkSection{
+    border: 1px solid black;
+}
+
+#collapsedBookmarkList{
+    border: 1px solid black;
+}
+
+#fullBookmarkList{
+    border: 1px solid black;
+}
+
+#flexbox{
+    display: flex;
+    flex-direction: row;
+}
+
+#itemOne{
+    flex: 1;
+}
+
+#itemTwo{
+    flex: 1;
+}
+
+#itemThree{
+    flex: 3;
+}
