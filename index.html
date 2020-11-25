@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,14 +9,16 @@
 </head>
 
 <body>
-    <header>
+    <!--
+        <header>
         <h1>My Bookmarks App</h1>
-        <p>Created by Ryan Conley</p>
+        
     </header>
     <br>
     <main>
-        <!--User input for new bookmarks-->
-        <div class="newBookmark">
+        <div class="creation">
+            ///////User input for new bookmarks\\\\\\\\
+        <div class="border">
             <h2>Lets add a bookmark!</h2>
             <form id="bookmark">
                 <label for="title">Name of bookmark: </label>
@@ -28,7 +31,7 @@
                 <textarea type="text" id="disc" name="disc"></textarea>
                 <br><br>
                 <label for="rating">Rating for this bookmark: </label>
-                <select name="rating">
+                <select name="rating" id="rating">
                     <option value="noRating" selected>☆☆☆☆☆</option>
                     <option value="oneStar">★☆☆☆☆</option>
                     <option value="twoStar">★★☆☆☆</option>
@@ -38,58 +41,65 @@
                 </select>
                 <button id="submit" type="submit">Submit</button>
             </form>
-        </div>
+        </div></div>
         <br>
-        <!--List of bookmarks already saved-->
-            <!--Must be condensed upon opening-->
+        <div class="saved">
+        //////////List of bookmarks already saved\\\\\\\\\\\\
+        //////////Must be condensed upon opening\\\\\\\\\\\\
         <h3>Saved bookmarks</h3>
-        <!--Filter list with dropdown-->
-        <select name="filter" id="filter">
+        //////////Filter list with dropdown\\\\\\\\\\\\
+        <select name="filter">
             <option value="a-z">A-Z</option>
             <option value="z-a">Z-A</option>
             <option value="h-l">Highest-Lowest</option>
             <option value="l-h">Lowest-Highest</option>
-        </select>
-        <div class="savedBookmark">
-            <br><br>
-            <!--Clicking on condensed app displays details-->
-                <!--Includes description and Visit Site Link-->
+        </select></div>
+        <br><br>
+        <div class="savedBookmarks">
+        <div>
+            //////////Clicking on condensed app displays details\\\\\\\\\\\\
+            //////////Includes description and Visit Site Link\\\\\\\\\\\\
             <h4>Collapsed view</h4>
-            <section id="collapsedBookmarkList">
+            <section class="border">
                 <div id="flexbox">
                     <p id="itemOne">Sample Bookmark</p>
-                    <p id="itemTwo">★★★★☆</p>
+                    <p id="itemOne">★★★★☆</p>
                 </div>
             </section>
             <br><br>
             <h4>Full view</h4>
-            <section id="fullBookmarkList">
-                <div id="flexbox" class="bookmarkSection">
-                    <p id="itemThree">Sample Bookmark</p>
-                    <!--Able to remove bookmarks-->
-                    <button id="itemTwo" class="delete">♻</button>
+            <section class="border">
+                <div id="flexbox" class="border">
+                    <p id="itemTwo">Sample Bookmark</p>
+                    //////////Able to remove bookmarks\\\\\\\\\\\\
+                    <button id="itemOne" class="edit">Edit</button>
+                    <button id="itemOne" class="delete">Delete</button>
                 </div>
                 <div id="bookmarkInfo">
+                    <br>
                     <div id="flexbox">
                         <button id="itemOne" class="link">Link</button>
-                        <p id="itemTwo">★★★★☆</p>
+                        <p id="itemOne">★★★★☆</p>
                     </div>
-                    <p>Sample text for the bookmark... It was a scrape that he hardly noticed. 
-                        Sure, there was a bit of blood but it was minor compared to most of the 
-                        other cuts and bruises he acquired on his adventures. There was no 
-                        way he could know that the rock that produced the cut had alien 
-                        genetic material on it that was now racing through his bloodstream. 
-                        He felt perfectly normal and continued his adventure with no 
+                    <p>Sample text for the bookmark... It was a scrape that he hardly noticed.
+                        Sure, there was a bit of blood but it was minor compared to most of the
+                        other cuts and bruises he acquired on his adventures. There was no
+                        way he could know that the rock that produced the cut had alien
+                        genetic material on it that was now racing through his bloodstream.
+                        He felt perfectly normal and continued his adventure with no
                         knowledge of what was about to happen to him.</p>
                 </div>
             </section>
-        </div>
+        </div></div>
+    -->
         <!--Appropriate feedback when cannot submit bookmark-->
-            <!--Example: no title //Bounces back popup of no title-->
+        <!--Example: no title //Bounces back popup of no title-->
         <!--Edit rating and description of bookmark (optional)-->
-    </main>
-    <footer></footer>
+    <!--</main>
+    <footer><p>Created by Ryan Conley</p></footer>-->
+    
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="index.js"></script>
+<script type="module" src="index.js"></script>
+
 </html>

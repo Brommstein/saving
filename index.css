@@ -2,19 +2,7 @@ body{
     text-align: center;
 }
 
-.newBookmark{
-    border: 1px solid black;
-}
-
-.bookmarkSection{
-    border: 1px solid black;
-}
-
-#collapsedBookmarkList{
-    border: 1px solid black;
-}
-
-#fullBookmarkList{
+.border{
     border: 1px solid black;
 }
 
@@ -28,9 +16,5 @@ body{
 }
 
 #itemTwo{
-    flex: 1;
-}
-
-#itemThree{
     flex: 3;
 }
