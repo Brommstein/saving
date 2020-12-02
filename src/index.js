@@ -3,8 +3,8 @@
 'use strict';
 import html from './html.js'
 import store from './store.js'
- 
-function render(){
+
+function render() {
     console.log('Starting file');
     $('body').html(html.createHTML);
     $('.creation').html(html.createAddBookmark);
@@ -13,7 +13,7 @@ function render(){
 }
 
 
-function main(){
+function main() {
     render();
     store.getInput();
 }

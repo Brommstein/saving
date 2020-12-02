@@ -1,4 +1,5 @@
 //Class that creates pure html content
+import store from './store.js'
 
 function createHTML(){
     return `<header>
